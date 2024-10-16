@@ -9,6 +9,6 @@ public struct Education: Codable, Identifiable {
     }
     
     var description: String {
-        "\(institution) - \(degree), \(year)"
+        "\(degree), \(institution), \(year)"
     }
 }

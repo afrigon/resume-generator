@@ -11,16 +11,21 @@ struct ResumeView: View {
             ResumeSection(title: "Projects / Competitions") {
                 Group {
                     ForEach(resume.projects) { project in
-                        Text(verbatim: project.name)
-                            .font(.apercu(size: 11, weight: .bold))
+                        HStack(alignment: .firstTextBaseline, spacing: 2) {
+                            Text(verbatim: project.name)
+                                .font(.system(size: 11, weight: .bold))
+                            
+                            Text(verbatim: "(\(project.url.absoluteString))")
+                                .font(.system(size: 9, weight: .thin))
+                        }
                         BulletPointList(items: [project.description])
                     }
                     
                     Text(verbatim: "Competitions")
-                        .font(.apercu(size: 11, weight: .bold))
+                        .font(.system(size: 11, weight: .bold))
 
                     BulletPointList(items: resume.achievements.map { items in
-                        String(items.map(\.value).joined(separator: "   ·   "))
+                        String(items.map(\.value).joined(separator: "  ·  "))
                     })
                 }
             }
@@ -30,18 +35,18 @@ struct ResumeView: View {
                     VStack {
                         HStack {
                             Text(verbatim: experience.employer)
-                                .font(.apercu(size: 11, weight: .bold))
+                                .font(.system(size: 11, weight: .bold))
                             
                             Spacer()
                             
                             Text(verbatim: experience.location)
                                 .foregroundStyle(Color.accent)
-                                .font(.apercu(size: 11, weight: .bold))
+                                .font(.system(size: 11, weight: .bold))
                         }
                         
                         HStack {
                             Text(verbatim: experience.role)
-                                .font(.apercu(size: 11))
+                                .font(.system(size: 11))
                                 .foregroundStyle(Color.title)
                             
                             Spacer()
@@ -62,10 +67,10 @@ struct ResumeView: View {
             }
 
             ResumeSection(title: "Interests") {
-                Text(verbatim: resume.interests.joined(separator: "   ·   "))
+                Text(verbatim: resume.interests.joined(separator: "  ·  "))
             }
         }
-        .font(.apercu(size: 11, weight: .thin))
+        .font(.system(size: 10, weight: .light))
         .padding(LetterPaper.margin)
         .frame(
             width: LetterPaper.width,

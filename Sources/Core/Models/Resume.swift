@@ -7,6 +7,7 @@ public struct Resume: Codable {
     let email: String
     let phone: String
     let website: URL
+    let username: String
     
     let projects: [Project]
     let achievements: [[Achievement]]
@@ -21,6 +22,7 @@ public struct Resume: Codable {
         email: String,
         phone: String,
         website: URL,
+        username: String,
         projects: [Project],
         achievements: [[Achievement]],
         experiences: [Experience],
@@ -33,6 +35,7 @@ public struct Resume: Codable {
         self.email = email
         self.phone = phone
         self.website = website
+        self.username = username
         self.projects = projects
         self.achievements = achievements
         self.experiences = experiences
@@ -61,7 +64,8 @@ public struct Resume: Codable {
         [
             phone,
             email,
-            website.absoluteString
+            website.absoluteString,
+            username
         ].joined(separator: separator)
     }
 }

@@ -4,19 +4,19 @@ struct ResumeHeaderView: View {
     let resume: Resume
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .center, spacing: 4) {
             Group {
                 Text(verbatim: resume.firstName)
                 +
                 Text(verbatim: " ")
                 +
                 Text(verbatim: resume.lastName)
-                    .font(.apercu(size: 14, weight: .bold))
+                    .bold()
             }
-            .font(.apercu(size: 14))
+            .font(.system(size: 15))
             .foregroundStyle(Color.title)
             
-            Text(verbatim: resume.contact(separator: "   |   "))
+            Text(verbatim: resume.contact(separator: "  |  "))
         }
     }
 }

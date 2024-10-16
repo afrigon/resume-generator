@@ -7,7 +7,7 @@ struct ResumeSection<Content: View>: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(verbatim: title)
-                .font(.apercu(size: 14, weight: .regular))
+                .font(.system(size: 14, weight: .regular))
                 .foregroundStyle(Color.accent)
             
             Divider()

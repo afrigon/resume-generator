@@ -13,8 +13,7 @@ let package = Package(
             name: "ResumeCore",
             path: "Sources/Core",
             resources: [
-                .copy("Data/afrigon.json"),
-                .process("Data/ApercuFlex.ttf")
+                .copy("Data/afrigon.json")
             ]
         ),
         

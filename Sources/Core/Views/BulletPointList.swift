@@ -5,8 +5,8 @@ struct BulletPointList: View {
     
     var body: some View {
         ForEach(items, id: \.self) { item in
-            Text(verbatim: "   •   ")
-                .font(.apercu(size: 11, weight: .black))
+            Text(verbatim: "  •  ")
+                .font(.system(size: 11, weight: .black))
             +
             Text(verbatim: item)
         }
