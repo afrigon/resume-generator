@@ -1,0 +1,141 @@
+{
+    "firstName": "Alexandre",
+    "lastName": "Frigon",
+    "jobRole": "Software Developer",
+    "email": "alexandre.frigon.1@gmail.com",
+    "phone": "+1 (819) 443-2564",
+    "website": "https://alexandre.frigon.app",
+    "projects": [
+        {
+            "name": "Swiftness",
+            "description": "Made an original Nintendo emulator using Swift and the Metal API",
+            "url": "https://github.com/afrigon/swiftness"
+        },
+        {
+            "name": "Study Helper",
+            "description": "Created an iOS app in Swift using Core Data and Firebase to help students with their studies",
+            "url": "https://itunes.apple.com/app/id1315378312"
+        },
+        {
+            "name": "Roadrunner",
+            "description": "Wrote a Minecraft-like game with multiplayer support using Rust and OpenGL",
+            "url": "https://github.com/roadrunner-craft/client"
+        },
+        {
+            "name": "TetanOS",
+            "description": "Developed a toy x86-64 OS kernel with keyboard inputs using Rust and Assembly",
+            "url": "https://github.com/tetanos/kernel"
+        }
+    ],
+    "achievements": [
+        [
+            {
+                "name": "Northsec 23",
+                "description": "5th place"
+            },
+            {
+                "name": "Northsec 21",
+                "description": "1st place"
+            },
+            {
+                "name": "Northsec 20",
+                "description": "3th place"
+            },
+            {
+                "name": "Northsec 19"
+            }
+        ],
+        [
+            {
+                "name": "Hackfest 23",
+                "description": "3th place"
+            },
+            {
+                "name": "Hackfest 19",
+                "description": "2nd place"
+            }
+        ],
+        [
+            {
+                "name": "CSGames 20",
+                "description": "1st place, Team Captain"
+            },
+            {
+                "name": "CSGames 19",
+                "description": "3nd place in reverse engineering"
+            }
+        ],
+        [
+            {
+                "name": "VP competition at CFI",
+                "description": "info-sec club"
+            }
+        ]
+    ],
+    "experiences": [
+        {
+            "employer": "Poka",
+            "role": "iOS Developer",
+            "startDate": "2021-11",
+            "location": "Montreal, QC",
+            "highlights": [
+                "Developed a reusable list component with pagination, prefetching and Combine",
+                "Transitioned the skills module from Objective-C to Swift, SwiftUI and Async/Await",
+                "Participated in the release process of iOS applications"
+            ]
+        },
+        {
+            "employer": "Desjardins",
+            "role": "iOS Developer",
+            "startDate": "2020-05",
+            "endDate": "2020-12",
+            "location": "Montreal, QC",
+            "highlights": [
+                "Released in-app notifications to notify users about new features in Desjardins mobile services"
+            ]
+        },
+        {
+            "employer": "Cortex",
+            "role": "Software Developer Intern",
+            "startDate": "2019-05",
+            "endDate": "2019-08",
+            "location": "Quebec City, QC",
+            "highlights": [
+                "Built a podcast streaming service using React.js and Django",
+                "Worked on a Kotlin Android app with serial port communications to car engines"
+            ]
+        },
+        {
+            "employer": "Gnak",
+            "role": "Software Developer Intern",
+            "startDate": "2016-05",
+            "endDate": "2019-05",
+            "location": "Amos, QC",
+            "highlights": [
+                "Automated clients' monthly metrics reports with Google Analytics and Facebook’s API",
+                "Worked on the CMS Web and iOS UI using React.js and Swift"
+            ]
+        }
+    ],
+    "educations": [
+        {
+            "institution": "Laval University",
+            "degree": "Bachelor’s Degree in Computer Science",
+            "year": 2022,
+            "location": "Quebec City, QC"
+        },
+        {
+            "institution": "Cégep de l’Abitibi-Témiscamingue",
+            "degree": "Associate’s Degree in Computer Science",
+            "year": 2017,
+            "location": "Rouyn-Noranda, QC"
+        }
+    ],
+    "interests": [
+        "Skateboarding",
+        "Music production",
+        "Trampoline",
+        "Low level Electronics",
+        "Dog Training"
+    ]
+}
