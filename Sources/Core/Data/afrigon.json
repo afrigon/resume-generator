@@ -9,7 +9,7 @@
     "projects": [
         {
             "name": "Swiftness",
-            "description": "Made an original Nintendo emulator using Swift and the Metal API",
+            "description": "Made an original Nintendo (NES) emulator using Swift and the Metal API",
             "url": "https://github.com/afrigon/swiftness"
         },
         {

@@ -13,16 +13,16 @@ struct ResumeView: View {
                     ForEach(resume.projects) { project in
                         HStack(alignment: .firstTextBaseline, spacing: 2) {
                             Text(verbatim: project.name)
-                                .font(.system(size: 11, weight: .bold))
+                                .font(.system(size: 10, weight: .bold))
                             
                             Text(verbatim: "(\(project.url.absoluteString))")
-                                .font(.system(size: 9, weight: .thin))
+                                .font(.system(size: 8, weight: .regular))
                         }
                         BulletPointList(items: [project.description])
                     }
                     
                     Text(verbatim: "Competitions")
-                        .font(.system(size: 11, weight: .bold))
+                        .font(.system(size: 10, weight: .bold))
 
                     BulletPointList(items: resume.achievements.map { items in
                         String(items.map(\.value).joined(separator: "  ·  "))
@@ -32,7 +32,7 @@ struct ResumeView: View {
             
             ResumeSection(title: "Experiences") {
                 ForEach(resume.experiences) { experience in
-                    VStack {
+                    VStack(spacing: 2) {
                         HStack {
                             Text(verbatim: experience.employer)
                                 .font(.system(size: 11, weight: .bold))
@@ -41,17 +41,18 @@ struct ResumeView: View {
                             
                             Text(verbatim: experience.location)
                                 .foregroundStyle(Color.accent)
-                                .font(.system(size: 11, weight: .bold))
+                                .font(.system(size: 9, weight: .bold))
                         }
                         
                         HStack {
                             Text(verbatim: experience.role)
-                                .font(.system(size: 11))
+                                .font(.system(size: 9, weight: .bold))
                                 .foregroundStyle(Color.title)
                             
                             Spacer()
                             
                             Text(verbatim: experience.dates)
+                                .font(.system(size: 9))
                                 .foregroundStyle(Color.title)
                         }
                     }
@@ -70,7 +71,7 @@ struct ResumeView: View {
                 Text(verbatim: resume.interests.joined(separator: "  ·  "))
             }
         }
-        .font(.system(size: 10, weight: .light))
+        .font(.system(size: 10, weight: .regular))
         .padding(LetterPaper.margin)
         .frame(
             width: LetterPaper.width,

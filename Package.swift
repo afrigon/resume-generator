@@ -13,7 +13,8 @@ let package = Package(
             name: "ResumeCore",
             path: "Sources/Core",
             resources: [
-                .copy("Data/afrigon.json")
+                .copy("Data/afrigon.json"),
+                .process("Data/github-mark.png")
             ]
         ),
         

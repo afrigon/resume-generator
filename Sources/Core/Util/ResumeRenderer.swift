@@ -16,7 +16,7 @@ public struct ResumeRenderer {
             ) else {
                 return
             }
-
+            
             pdfContext.beginPDFPage(nil)
 
             renderContext(pdfContext)
