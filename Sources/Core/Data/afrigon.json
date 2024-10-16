@@ -79,9 +79,9 @@
             "startDate": "2021-11",
             "location": "Montreal, QC",
             "highlights": [
-                "Developed a reusable list component with pagination, prefetching and Combine",
                 "Transitioned the skills module from Objective-C to Swift, SwiftUI and Async/Await",
-                "Participated in the release process of iOS applications"
+                "Developed a reusable list component with pagination, prefetching and Combine",
+                "Participated in the release, monitoring and support process of iOS applications"
             ]
         },
         {
