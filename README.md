@@ -8,7 +8,7 @@ content lives in data. Requires macOS 15.
 ## Usage
 
 ```sh
-mise run run
+mise run render
 ```
 
 Loads the resume definition bundled with the package and writes

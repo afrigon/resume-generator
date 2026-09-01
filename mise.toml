@@ -10,7 +10,7 @@ swiftformat = "0.62"
 description = "Build the package"
 run = "swift build"
 
-[tasks.run]
+[tasks.render]
 description = "Render the resume to ~/Downloads/resume.pdf"
 run = "swift run"
 
