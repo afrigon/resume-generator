@@ -8,9 +8,9 @@
     "username": "afrigon",
     "projects": [
         {
-            "name": "Swiftness",
+            "name": "Xemu",
             "description": "Made an original Nintendo (NES) emulator using Swift and the Metal API",
-            "url": "https://github.com/afrigon/swiftness"
+            "url": "https://github.com/afrigon/xemu"
         },
         {
             "name": "Study Helper",
@@ -76,13 +76,13 @@
     "experiences": [
         {
             "employer": "Poka",
-            "role": "iOS Developer",
+            "role": "Senior iOS Developer",
             "startDate": "2021-11",
             "location": "Montreal, QC",
             "highlights": [
-                "Transitioned the skills module from Objective-C to Swift, SwiftUI and Async/Await",
-                "Developed a reusable list component with pagination, prefetching and Combine",
-                "Participated in the release, monitoring and support process of iOS applications"
+                "Transitioned the learning and development module from Obj-C to SwiftUI and Async/Await",
+                "Improved skill due dates usage by 3.5x through user behaviour analysis and A/B testing",
+                "Led security threat modeling efforts, contributing to a clean SOC 2 audit in 2024"
             ]
         },
         {
@@ -92,7 +92,7 @@
             "endDate": "2020-12",
             "location": "Montreal, QC",
             "highlights": [
-                "Released in-app notifications to notify users about new features in Desjardins mobile services"
+                "Released in-app notification system to educate users about new features"
             ]
         },
         {
